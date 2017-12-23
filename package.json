@@ -1,0 +1,19 @@
+{
+  "name": "zenpooling",
+  "version": "0.0.1",
+  "description": "A node.js website and server for pooling zen to create secure nodes.",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alotoffluffyhair/ZenPooling.git"
+  },
+  "author": "alotoffluffyhair",
+  "license": “MIT”,
+  "bugs": {
+    "url": "https://github.com/alotoffluffyhair/ZenPooling/issues"
+  },
+  "homepage": "https://github.com/alotoffluffyhair/ZenPooling#readme"
+}
