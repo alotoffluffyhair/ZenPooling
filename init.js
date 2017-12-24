@@ -2,6 +2,7 @@ var fs = require('fs');
 var cluster = require('cluster');
 
 var Logger = require('./src/logger.js');
+var Website = require('./src/website.js');
 
 JSON.minify = require('node-json-minify');
 
@@ -13,8 +14,10 @@ if (!fs.existsSync('config.json')){
 
 var serverConfig = JSON.parse(JSON.minify(fs.readFileSync("config.json", {encoding: 'utf8'})));
 var logger = new Logger(serverConfig.logLevel);
+
+new Website(logger);  	
   	
-if (cluster.isWorker) {
+/*if (cluster.isWorker) {
 	console.log(`I am worker ${cluster.worker.id}`);
 	logger.all('Worker', '${cluster.worker.id}', 'test');
 	return;
@@ -27,4 +30,4 @@ if (cluster.isWorker) {
 	cluster.fork();
 	cluster.fork();
 	
-})();
+})(); */
