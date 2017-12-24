@@ -11,9 +11,12 @@
     "url": "git+https://github.com/alotoffluffyhair/ZenPooling.git"
   },
   "author": "alotoffluffyhair",
-  "license": “MIT”,
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alotoffluffyhair/ZenPooling/issues"
   },
-  "homepage": "https://github.com/alotoffluffyhair/ZenPooling#readme"
+  "homepage": "https://github.com/alotoffluffyhair/ZenPooling#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
